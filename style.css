@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --title-color: white;
+  --title-font: 'Inter';
+  --title-font-size: 1.5rem;
+
+  --text-color: hsla(240, 5%, 65%, 1);
+  --text-font: 'Inter', sans-serif;
+  --text-font-size: 1rem
+}
+
+a{
+  text-decoration: none;
+}
+
+main{
+  max-width: 36.25rem;
+  margin: auto;
+}
+
+body{
+  background-image: url(/assets/photos/Fundo.jpg);
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #121214;
+}
+
+header{
+  text-align: center;
+  margin: 2rem;
+}
+
+header div{
+  height: 7.5rem;
+  width: 7.5rem;
+  margin: auto;
+  clip-path: circle();
+
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+  padding: 4px;
+  
+  transition: transform 0.3s;
+}
+
+header div:hover{
+  transform: scale(1.1);
+}
+
+header img{
+  width: 100%;
+  border-radius: 50%;
+  
+}
+
+section{
+  color: white;
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+  padding-top: 4px;
+  border-radius: 0.7rem;
+  animation: fromLeft 0.2s backwards;
+
+}
+
+section:nth-child(2){
+  animation-delay: 0.2s;
+}
+
+section:nth-child(3){
+  animation-delay: 0.4s;
+}
+
+section div{
+  display: grid;
+  background: hsla(257, 16%, 18%, 1);
+  
+  
+  padding: 2rem;
+  padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  border-radius: 0.5rem;
+}
+
+.title{
+  color: var(--title-color);
+  font: 900 var(--title-font-size) var(--title-font);
+  line-height: 160%;
+}
+
+.text{
+  color: var(--text-color);
+  font: 400 var(--text-font-size) var(--text-font);
+  line-height: 160%;
+  margin-bottom: 1.5rem;
+}
+
+ul{
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+ul li{
+  list-style: none;
+}
+
+ul li:hover{
+  transform: translateY(-4px) scale(1.05);
+  transition: 0.3s;
+}
+
+ul li img{
+  height: 7.5rem;
+  width: 5.625rem;
+  border-radius: 0.5rem;
+}
+
+.pictures img{
+  height: 4.375rem;
+  width: 4.375rem;
+  border: 1px solid #443E54;
+  border-radius: 50%;
+}
+
+.links a{
+  font-size: 2rem;
+}
+
+.icon-youtube{
+  color: hsla(360, 100%, 48%, 1);
+}
+
+.icon-instagram{
+  color: hsla(299, 99%, 63%, 1);
+}
+
+.icon-twitch{
+  color: hsla(270, 100%, 60%, 1)
+}
+
+.icon-twitter{
+  color: hsla(220, 100%, 58%, 1);
+}
+
+/* Animations */
+
+@keyframes fromLeft {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
