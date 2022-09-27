@@ -1,4 +1,4 @@
-# NLW 6 - Trilha Origins
+# NLW eSports - Trilha Explorer
 
 >Projeto construído no evento Next Level Week eSports da Rocketseat.
 
